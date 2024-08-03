@@ -110,25 +110,27 @@ to merge given branch with current branch
 
 our work flow in this project should be something like this :
 
-let say we have to add Oauth2 system with google
+let say we want to add Oauth2 system with google.
 
-first we make sure that we are in the dev branch '`git checkout dev`'
+first we make sure that we are in dev branch '`git checkout dev`'.
 
-then we pull dev to have newest code '`git pull origin dev`'
+then we pull dev to the newest code '`git pull origin dev`'.
 
-then create new branch name 'feature/Oath2-google' '`git branch feature/Oath2-google`'
+then create new branch, name: 'feature/Oath2-google' '`git branch feature/Oath2-google`'.
 
-then we publish the new branch to remote repo '`git push --set-upstream origin feature/Oath2-google`'
+then we publish the new branch to remote repo '`git push --set-upstream origin feature/Oath2-google`'.
 
-then we move to new branch '`git checkout feature/Oath2-google`'
+then we checkout to the new branch '`git checkout feature/Oath2-google`'.
 
-then we make sure that we are in the new branch '`git status`'
+then we make sure that we are in the new branch '`git status`'.
 
-after that we do some coding and make some commits '`git add .`' and '`git commit -m 'msg'`'
+after that we do some coding and make some commits '`git add .`' and '`git commit -m 'msg'`'.
 
-and always push the code '`git push origin feature/Oath2-google`'
+and always push the code '`git push origin feature/Oath2-google`'.
 
 then we should wait for code review meet and hopefully everything is right.
+
+or if we are sure that the code is alright we can merge it ourself '`git chechout dev`', '`git merge feature/Oath2-google`' and '`git push origin dev`'.
 
 ## Git Policies
 
